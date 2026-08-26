@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티 타임존 디지털 시계</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 멀티 타임존 디지털 시계</h1>
+            <p>전 세계의 시간을 한눈에 확인하세요</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="timezone-selector">
+                    <label for="addTimezone">시간대 추가:</label>
+                    <select id="addTimezone">
+                        <option value="">-- 시간대 선택 --</option>
+                        <option value="UTC">UTC (협정 세계시)</option>
+                        <option value="Asia/Seoul">서울 (한국)</option>
+                        <option value="Asia/Tokyo">도쿄 (일본)</option>
+                        <option value="Asia/Shanghai">상하이 (중국)</option>
+                        <option value="Asia/Bangkok">방콕 (태국)</option>
+                        <option value="Asia/Singapore">싱가포르</option>
+                        <option value="Asia/Hong_Kong">홍콩</option>
+                        <option value="Asia/Dubai">두바이 (UAE)</option>
+                        <option value="Asia/Kolkata">뉴델리 (인도)</option>
+                        <option value="Europe/London">런던 (영국)</option>
+                        <option value="Europe/Paris">파리 (프랑스)</option>
+                        <option value="Europe/Berlin">베를린 (독일)</option>
+                        <option value="Europe/Moscow">모스크바 (러시아)</option>
+                        <option value="Africa/Cairo">카이로 (이집트)</option>
+                        <option value="Africa/Lagos">라고스 (나이지리아)</option>
+                        <option value="America/New_York">뉴욕 (미국 동부)</option>
+                        <option value="America/Chicago">시카고 (미국 중부)</option>
+                        <option value="America/Denver">덴버 (미국 산악)</option>
+                        <option value="America/Los_Angeles">로스앤젤레스 (미국 태평양)</option>
+                        <option value="America/Anchorage">앵커리지 (알래스카)</option>
+                        <option value="Pacific/Honolulu">호놀룰루 (하와이)</option>
+                        <option value="America/Toronto">토론토 (캐나다)</option>
+                        <option value="America/Mexico_City">멕시코시티 (멕시코)</option>
+                        <option value="America/Sao_Paulo">상파울루 (브라질)</option>
+                        <option value="America/Argentina/Buenos_Aires">부에노스아이레스 (아르헨티나)</option>
+                        <option value="Australia/Sydney">시드니 (호주)</option>
+                        <option value="Australia/Melbourne">멜버른 (호주)</option>
+                        <option value="Pacific/Auckland">오클랜드 (뉴질랜드)</option>
+                    </select>
+                    <button id="addBtn" class="btn">추가</button>
+                </div>
+
+                <button id="resetBtn" class="btn btn-secondary">초기화</button>
+            </div>
+
+            <div class="clocks-grid" id="clocksGrid">
+                <!-- 시계들이 여기에 동적으로 추가됨 -->
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 멀티 타임존 디지털 시계</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
